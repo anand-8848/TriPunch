@@ -11,6 +11,7 @@ import android.graphics.PixelFormat
 import android.os.Build
 import android.os.IBinder
 import android.util.DisplayMetrics
+import android.content.res.Configuration
 import android.view.Gravity
 import android.view.View
 import android.view.WindowManager
@@ -106,6 +107,7 @@ class OverlayService : Service() {
 
         if (!prefs.getBoolean(PrefsKeys.MASTER_ON, false)) return
 
+        if (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) return
         val metrics: DisplayMetrics = resources.displayMetrics
         val screenWidthPx = metrics.widthPixels
         val density = metrics.density
@@ -132,6 +134,10 @@ class OverlayService : Service() {
 
             container.addView(hole)
         }
+    }
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        redrawHoles()
     }
 
     override fun onDestroy() {
