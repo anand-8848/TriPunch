@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0D10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tri-Hole"
+            android:textColor="#E7EBEF"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="20dp"
+            android:text="Fake punch-hole cutouts drawn on top of your screen."
+            android:textColor="#8892A0"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/grantPermissionButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="1. Allow \"display over other apps\"" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2. Turn overlay on"
+                android:textColor="#E7EBEF"
+                android:textSize="15sp" />
+
+            <Switch
+                android:id="@+id/masterSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hole 1 — Selfie camera"
+            android:textColor="#5EEAD4"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="6dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Enabled" android:textColor="#8892A0" />
+            <Switch android:id="@+id/holeToggle0" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/sizeLabel0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#8892A0" android:text="Size" />
+        <SeekBar android:id="@+id/sizeSeek0" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/posLabel0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#8892A0" android:text="Position" />
+        <SeekBar android:id="@+id/posSeek0" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/topLabel0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#8892A0" android:text="Top gap" />
+        <SeekBar android:id="@+id/topSeek0" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hole 2 — ToF sensor"
+            android:textColor="#5EEAD4"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="6dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Enabled" android:textColor="#8892A0" />
+            <Switch android:id="@+id/holeToggle1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/sizeLabel1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#8892A0" android:text="Size" />
+        <SeekBar android:id="@+id/sizeSeek1" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/posLabel1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#8892A0" android:text="Position" />
+        <SeekBar android:id="@+id/posSeek1" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/topLabel1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#8892A0" android:text="Top gap" />
+        <SeekBar android:id="@+id/topSeek1" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hole 3 — ToF sensor"
+            android:textColor="#5EEAD4"
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="6dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Enabled" android:textColor="#8892A0" />
+            <Switch android:id="@+id/holeToggle2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/sizeLabel2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#8892A0" android:text="Size" />
+        <SeekBar android:id="@+id/sizeSeek2" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/posLabel2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#8892A0" android:text="Position" />
+        <SeekBar android:id="@+id/posSeek2" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@+id/topLabel2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#8892A0" android:text="Top gap" />
+        <SeekBar android:id="@+id/topSeek2" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="12dp"
+            android:background="#1C2027"
+            android:textColor="#8892A0"
+            android:textSize="12sp"
+            android:text="Note: the holes are drawn on a system overlay layer, so they'll stay visible on your home screen and inside other apps even after you close Tri-Hole — until you turn the switch above off." />
+
+    </LinearLayout>
+</ScrollView>
